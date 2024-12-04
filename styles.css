@@ -98,17 +98,17 @@ header .logo img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 .social-icon {
     color: #333;
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
