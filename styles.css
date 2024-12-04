@@ -94,16 +94,21 @@ header .logo img {
 /* Social Media and Mobile Section */
 .social-contact {
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
+    background: #fff; /* Optional: Add a defined background color if needed */
+    margin: 0;
 }
 
 .social-icons {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
+    margin: 0;
 }
 
 .social-icon {
@@ -118,9 +123,11 @@ header .logo img {
 }
 
 .mobile-number {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: #333;
+    text-align: center;
+    margin: 0;
 }
 
 .number-link {
@@ -131,6 +138,26 @@ header .logo img {
 
 .number-link:hover {
     color: #092c19;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 480px) {
+    .social-contact {
+        padding: 20px 10px; /* More padding for better vertical spacing */
+        gap: 15px;
+    }
+
+    .social-icons {
+        gap: 8px; /* Slightly reduce icon gap */
+    }
+
+    .social-icon {
+        font-size: 18px; /* Adjust icon size for mobile */
+    }
+
+    .mobile-number {
+        font-size: 13px; /* Adjust font size for better balance */
+    }
 }
 
 .scroll-left {
