@@ -16,14 +16,13 @@ body {
 /* Navbar */
 header {
     background-color: #004d00;
-    padding: 10px 20px;
+    padding: 20px;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 header .logo {
@@ -34,19 +33,13 @@ header .logo {
 }
 
 header .logo img {
-    width: 150px; /* Smaller logo for mobile */
+    width: 300px;
     margin-right: 10px;
 }
-
 .dialoge {
-    color: #ffffff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-        sans-serif;
-    font-size: larger;
-    text-align: center; /* Center align for smaller screens */
+    color: #ddd;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 .nav-links {
     list-style: none;
     display: flex;
@@ -64,56 +57,24 @@ header .logo img {
     color: #ff0000;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column; /* Stack links vertically */
-        gap: 10px;
-        text-align: center;
-    }
-
-    .dialoge {
-        font-size: medium;
-    }
-}
-
-@media (max-width: 480px) {
-    header .logo img {
-        width: 120px; /* Further reduce logo size */
-    }
-
-    .nav-links {
-        font-size: 16px;
-    }
-
-    .dialoge {
-        font-size: smaller;
-    }
-}
-
 /* Social Media and Mobile Section */
 .social-contact {
     text-align: center;
-    padding: 10px 15px;
+    padding: 10px 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    background: #fff; /* Optional: Add a defined background color if needed */
-    margin: 0;
+    gap: 30px;
 }
 
 .social-icons {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin: 0;
+    gap: 15px;
 }
 
 .social-icon {
     color: #333;
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -123,11 +84,9 @@ header .logo img {
 }
 
 .mobile-number {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     color: #333;
-    text-align: center;
-    margin: 0;
 }
 
 .number-link {
@@ -140,51 +99,20 @@ header .logo img {
     color: #092c19;
 }
 
-/* Responsive Design for Mobile Screens */
-@media (max-width: 480px) {
-    .social-contact {
-        padding: 20px 10px; /* More padding for better vertical spacing */
-        gap: 15px;
-    }
-
-    .social-icons {
-        gap: 8px; /* Slightly reduce icon gap */
-    }
-
-    .social-icon {
-        font-size: 18px; /* Adjust icon size for mobile */
-    }
-
-    .mobile-number {
-        font-size: 13px; /* Adjust font size for better balance */
-    }
-}
-
 .scroll-left {
-    width: 100%; /* Full width of the container */
-    height: 50px; /* Fixed height of the container */
-    overflow: hidden; /* Hide the content that overflows the container */
-    background: rgb(18, 87, 1); /* Background color */
-    color: rgb(255, 255, 255); /* Text color */
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background: rgb(18, 87, 1);
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: center;
 }
 
-.scroll-left span {
-    display: inline-block; /* Ensure the spans are displayed in a single line */
-    white-space: nowrap; /* Prevent wrapping */
-    padding-right: 50px; /* Add some space between duplicate text */
-    animation: scroll-left 10s linear infinite; /* Apply continuous animation */
-}
-
-@keyframes scroll-left {
-    0% {
-        transform: translateX(0); /* Start from the initial position */
-    }
-    100% {
-        transform: translateX(-100%); /* Move completely off-screen */
-    }
+.scroll-left p {
+    position: absolute;
+    transition: transform 1s ease;
 }
 
 /* Home Section with Background Image */
@@ -279,6 +207,7 @@ header .logo img {
     max-width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
+    
 }
 @media (max-width: 1200px) {
     .product-container {
@@ -295,6 +224,7 @@ header .logo img {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 
 .product-card {
     background-color: #e47171;
@@ -369,9 +299,7 @@ header .logo img {
     font-size: 16px;
     line-height: 1.6;
     font-style: italic;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-        sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .contact-info h3 {
