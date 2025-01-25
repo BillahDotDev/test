@@ -36,10 +36,13 @@ header .logo img {
     width: 300px;
     margin-right: 10px;
 }
+
 .dialoge {
     color: #ddd;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
 }
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -112,20 +115,21 @@ header .logo img {
 
 .scroll-left p {
     position: absolute;
-    transition: transform 1s ease;
+    transition: transform 1s ease;
 }
 
 /* Home Section with Background Image */
 #home {
-    background: url('https://t3.ftcdn.net/jpg/05/79/54/50/360_F_579545022_knNw3oaArVIEub5H3MDknsVLfQR4Z6gC.jpg')
-        no-repeat center center/cover;
-    height: 100vh; /* Full viewport height */
+    background: url('https://t3.ftcdn.net/jpg/05/79/54/50/360_F_579545022_knNw3oaArVIEub5H3MDknsVLfQR4Z6gC.jpg') no-repeat center center/cover;
+    height: 100vh;
+    /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
-    background-attachment: fixed; /* Parallax effect (optional) */
+    background-attachment: fixed;
+    /* Parallax effect (optional) */
 }
 
 .hero-content h1 {
@@ -207,18 +211,21 @@ header .logo img {
     max-width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
-    
+
 }
+
 @media (max-width: 1200px) {
     .product-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 @media (max-width: 768px) {
     .product-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 480px) {
     .product-container {
         grid-template-columns: repeat(1, 1fr);
